@@ -10,5 +10,11 @@ class Box_Collider(Collider):
 class Ship(Object):
     pass
 
+class Player(Ship):
+    pass
+
+class Enemy_Ship(Ship):
+    pass
+
 class Bullet(Object):
     pass

@@ -1,0 +1,29 @@
+
+
+
+Player
+	func: update_Position(self) -> none
+		~Move left and right
+	func: shoot_From_Self(self) -> none
+		~Create a bullet object from this object that travels towards the player side of the screen
+	func: hit_Check(self) -> none
+		~Take damage when collide when enemy bullet
+	func: begin_Invulnerability(self, time : float, can_Shoot : boolean = True) -> none
+		~Become temporarily invulnerable, for {time} seconds. If can shoot is set to true, then you can shoot.  
+
+Enemy
+	func: update_Position(self, x : int, y : int, additive : boolean = False) -> none
+		~If additive, moves x units right and y units down, if not, move to location (x, y).
+	func: shoot_From_Self(self, strength : int) -> none
+		~Create a bullet object from this object that travels towards the player side of the screen.
+	Occasionally shoot at the player
+	Take damage when shot
+
+Enemy Formation
+	Move enemies in its formation
+	Remove itself when all enemies inside of it die
+
+Enemy Wave Generator
+	Count all enemy formations
+	When all enemy formations in the current wave die, spawn the next one
+

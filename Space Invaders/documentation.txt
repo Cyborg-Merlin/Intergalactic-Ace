@@ -1,0 +1,6 @@
+There are two ways I can handle the game's graphics
+I can have simulated graphics, where the objects exist in a sort of imaginary space, and the game renders the objects on top of that space
+I can have pixel perfect graphics, where the objects collide and interact if they touch in the game
+
+I think I want to experiment with simulated graphics
+Game pieces and other objects exist on a simulated grid of floating point numbers, then the game takes those floating point values and renders sprites and objects based extrapolated pixel coordinates
